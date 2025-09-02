@@ -1,0 +1,11 @@
+
+@import "./constants.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    background-color: var(--White-background-color);
+}
