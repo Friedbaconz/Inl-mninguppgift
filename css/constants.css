@@ -1,3 +1,9 @@
 :root {
-    --White-background-color: #e64343; 
+    --White-background-color: #ffffff;
+    --gray-button-color: #9397AD;
+    --purple-signin: #6366F1;
+}
+
+[data-theme="dark"] {
+
 }
