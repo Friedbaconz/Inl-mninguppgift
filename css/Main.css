@@ -15,7 +15,7 @@ body {
 .navbar {
     display: flex;
     background-color: var(--White-background-color);
-    margin: 0 15px;
+    padding: 0 15px;
     height: 76px;
 }
 
@@ -89,19 +89,19 @@ body {
     height: 876px;
     width:100%;
     background-color: var(--White-background-color);
-    background: radial-gradient(ellipse at bottom, #6366F11A 0%, #DA46EF0D 42%, #F1F4FD12 63%, #ffffffff 100%);
-    margin: 0px 15px;
+    background: radial-gradient(ellipse at bottom, #6366F11A 0%, #DA46EF0D 42%, #F1F4FD12 73%, #ffffffff 100%);
 }
 
 .title {
     display: flex;
     max-width: 1296px;
+    height: 100%;
     width: 100%;
     align-items: center;
     padding-right: 0px;
     position: relative;
     margin: auto;
-    max-width: auto;
+    padding: 0px 15px;
 }
 
 .herotext1 {
@@ -110,16 +110,20 @@ body {
     font-weight: bold;
     margin-bottom: 24px;
     width: 526px;
+    line-height: 130%;
 }
 
 .herotext2 {
-    font-size: small;
+    font-size: 18px;
     font-family: "Manrope", sans-serif;
-    color: var(--smalltext-color)
+    color: var(--smalltext-color);
+    line-height: 160%;
+    
 }
 
 .herotext3 {
-    font-size: small;
+    font-size: 18px;
     font-family: "Manrope", sans-serif;
     color: var(--smalltext-color);
+    line-height: 160%;
 }
