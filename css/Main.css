@@ -8,24 +8,25 @@
 }
 
 body {
-    max-width: 1920px;
+    max-width: auto;
     margin: auto;
 }
 
 .navbar {
     display: flex;
     background-color: var(--White-background-color);
-    margin: 0 15px 25px;
+    margin: 0 15px;
     height: 76px;
 }
 
 .content-wrapper{
     display:flex;
-    max-width:1330px;
+    max-width:1296px;
     width:100%;
     margin:auto;
     position:relative;
     align-items: center;
+    
 }
 
 .nav-right{
@@ -44,7 +45,7 @@ body {
 .darkmodebutton {
     justify-content: center;
     align-items: center;
-    margin-top: 36px;
+    margin: auto;
     margin-right: 16px;
 }
 
@@ -57,7 +58,7 @@ body {
 
 .login {
     display: flex;
-    margin-top: 36px;
+    margin: auto;
     border-radius: 4px;
     padding: 9px 20px;
     align-items: center;
@@ -80,24 +81,45 @@ body {
     margin-right: 8px;
 }
 
+
+
 .hero {
-    display: block;
-    max-width: 1330px;
+    display:block;
+    max-width: auto;
     height: 876px;
     width:100%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     background-color: var(--White-background-color);
-    background: radial-gradient(ellipse at bottom, #6366F11A 0%, #DA46EF0D 42%, #F1F4FD12 83%, #ffffffff 100%);
+    background: radial-gradient(ellipse at bottom, #6366F11A 0%, #DA46EF0D 42%, #F1F4FD12 63%, #ffffffff 100%);
+    margin: 0px 15px;
 }
 
 .title {
-    display: block;
-    max-width: 526px;
+    display: flex;
+    max-width: 1296px;
+    width: 100%;
+    align-items: center;
+    padding-right: 0px;
     position: relative;
+    margin: auto;
+    max-width: auto;
 }
 
-.smalltext {
-    display: block;
+.herotext1 {
+    font-size: 56px;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    margin-bottom: 24px;
+    width: 526px;
+}
+
+.herotext2 {
+    font-size: small;
+    font-family: "Manrope", sans-serif;
+    color: var(--smalltext-color)
+}
+
+.herotext3 {
+    font-size: small;
+    font-family: "Manrope", sans-serif;
+    color: var(--smalltext-color);
 }
