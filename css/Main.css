@@ -5,12 +5,18 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-    
 }
 
 body {
     max-width: 1920px;
     margin: auto;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--White-background-color);
+    margin: 0 15px 25px;
+    height: 76px;
 }
 
 .content-wrapper{
@@ -19,16 +25,9 @@ body {
     width:100%;
     margin:auto;
     position:relative;
+    align-items: center;
 }
 
-.header {
-}
-
-.navbar {
-    display: flex;
-    background-color: var(--White-background-color);
-    margin:0 15px;
-}
 .nav-right{
     display:flex;
     position:absolute;
@@ -37,16 +36,15 @@ body {
 
 .logo {
     display: flex;
-    margin-top: 16px;
+    margin-top: 15px;
     height: 44px;
     width: 122px;
-    
 }
 
 .darkmodebutton {
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 36px;
     margin-right: 16px;
 }
 
@@ -54,19 +52,52 @@ body {
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     padding:12px 0;
+    line-height: 18px;
 }
 
 .login {
-margin-top: 25px;
-border-radius: 4px;
-padding: 12px 9px;
-align-items: center;
-justify-content: center;
-background-color: var(--purple-signin);
+    display: flex;
+    margin-top: 36px;
+    border-radius: 4px;
+    padding: 9px 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple-signin);
+
 }
 
-.signintext {
+.logintext {
     font-size: 14px;
     font-family: "Manrope", sans-serif;
     color: var(--White-background-color);
+    text-decoration: none;
+    line-height: 18px;
+}
+
+.bi-person {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.hero {
+    display: block;
+    max-width: 1330px;
+    height: 876px;
+    width:100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--White-background-color);
+    background: radial-gradient(ellipse at bottom, #6366F11A 0%, #DA46EF0D 42%, #F1F4FD12 83%, #ffffffff 100%);
+}
+
+.title {
+    display: block;
+    max-width: 526px;
+    position: relative;
+}
+
+.smalltext {
+    display: block;
 }
