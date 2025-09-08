@@ -51,7 +51,7 @@ body {
 }
 
 .darkmodetext {
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-family-standard);
     font-size: 16px;
     padding:12px 0;
     line-height: 160%;
@@ -91,7 +91,7 @@ body {
 
 .logintext {
     font-size: 14px;
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-family-standard);
     color: var(--White-background-color);
     text-decoration: none;
     line-height: 18px;
@@ -134,7 +134,7 @@ body {
 
 .herotext1 {
     font-size: 56px;
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-family-standard);
     font-weight: bold;
     margin-bottom: 24px;
     width: 526px;
@@ -143,7 +143,7 @@ body {
 
 .herotext2 {
     font-size: 18px;
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-family-standard);
     color: var(--smalltext-color);
     line-height: 160%;
     
@@ -151,7 +151,7 @@ body {
 
 .herotext3 {
     font-size: 18px;
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-family-standard);
     color: var(--smalltext-color);
     line-height: 160%;
 }
@@ -180,10 +180,11 @@ body {
     background-color: var(--White-background-color);
     align-items: center;
     justify-content: center;
+    
 }
 
 .Logo {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -192,8 +193,8 @@ body {
     max-width: 1296px;
     margin: auto;
     margin-top: 96px;
-    justify-content: space-between;
-    margin-bottom: 96px;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
 }
 
 .logo1 {
@@ -216,4 +217,76 @@ body {
 
 .logo2:hover {
     box-shadow: 0px 2px 10px 0px lightgrey;
+}
+
+.featuresapp {
+    display: flex;
+    max-width: 1296px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.featuretext {
+    display: flex;
+    margin: auto;
+    margin-left: 202px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    
+}
+
+.appfeaturehead {
+    font-family: var(--font-family-standard);
+    margin-bottom: 80px;
+}
+
+.apptitle {
+    line-height: 130%;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.apptitletext {
+    color: var(--smallergreytext);
+    line-height: 160%;
+    font-size: 18px;
+}
+
+.featurebox {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    flex-basis: 100%;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+.iconbox {
+    display: flex;
+    font-family: var(--font-family-standard);
+    min-width: 345px;
+}
+
+.iconboximg {
+    width: 60px;
+    height: 60px;
+    margin:auto;
+    margin-right: 24px;
+    margin-top: 0px;
+}
+
+.iconboxtext {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--smalltext-color);
+}
+
+.featurephone {
+    display: block;
+    width: 348px;
+    height: 684px;
+    margin-top: 20px;
 }

@@ -4,6 +4,8 @@
     --purple-signin: #6366F1;
     --smalltext-color: #565973;
     --logo-box: #E2E5F1;
+    --font-family-standard: "Manrope", sans-serif;
+    --smallergreytext: #9397AD;
 }
 
 [data-theme="dark"] {
