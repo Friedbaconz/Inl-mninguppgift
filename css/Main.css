@@ -252,6 +252,7 @@ body {
     color: var(--smallergreytext);
     line-height: 160%;
     font-size: 18px;
+    width: 746px;
 }
 
 .featurebox {
@@ -335,7 +336,7 @@ body {
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 636px;
+    width: 636px;
     font-family: var(--font-family-standard);
     text-align: center;
     margin-top: 70px;
@@ -347,4 +348,83 @@ body {
     color: var(--smalltext-color);
     display: flex;
     line-height: auto;
+}
+
+
+.appfeatures{
+    display:flex;
+    height: auto;
+    max-width: auto;
+    width:100%;
+    padding-bottom: 90px;
+}
+
+.featurewrapper {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+}
+
+.upperfeatures {
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.textupper {
+    font-family: var(--font-family-standard);
+    display: box;
+    width: 416px;
+    margin-right: 100px;
+    padding-left: 10px;
+}
+
+.listfeatures {
+    padding-left: 0;
+    margin-left: 25px;
+    list-style: url("/logo/bx-check-circle.svg");
+}
+
+li {
+    font-size: 16px;
+    color: var(--smalltext-color);
+    margin-bottom: 12px;
+}
+
+.learnmore {
+    display: flex;
+    width: 159px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: var(--purple-signin);
+    align-items: center;
+    justify-content: center;
+    color: var(--White-background-color);
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.learnmoretext {
+    margin-right: 8px;
+}
+
+.learnmoreimg {
+    margin-top: 2px;
+}
+
+.h1appfeatures {
+    display: flex;
+    font-size: 32px;
+    margin-bottom: 50px;
+    width:  95%;
+}
+
+.imgupper {
+    display: block;
+    
+    margin-top: 2px;
+    width: 526px;
+    height: 500px;
 }
