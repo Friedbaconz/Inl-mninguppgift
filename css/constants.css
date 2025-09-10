@@ -7,6 +7,7 @@
     --font-family-standard: "Manrope", sans-serif;
     --smallergreytext: #9397AD;
     --hdiw-background: #F3F6FF;
+    --icon-background-color: #EFF2FC;
 }
 
 [data-theme="dark"] {
