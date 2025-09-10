@@ -12,11 +12,23 @@ body {
     margin: auto;
 }
 
+.headers {
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White-background-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
 .navbar {
     display: flex;
     background-color: var(--White-background-color);
     padding: 0 15px;
     height: 76px;
+    width: 100%;
 }
 
 .content-wrapper{
@@ -477,7 +489,7 @@ li {
 
 .testaimonials {
     display:flex;
-    height: auto;
+    height: 100%;
     margin: auto;
     align-items: center;
     max-width: auto;
@@ -497,15 +509,15 @@ li {
 .testaimonialhead {
     width: 306px;
     font-family: var(--font-family-standard);
-    margin-right: 100px;
-    width: 18%;
+    margin-right: 90px;
+    margin-left: 150px;
+    
     font-weight: bold;
+    font-size: larger;
 }
 
 .commentbox {
     display: flex;
-    
-    height: 350px;
 }
 
 .reviewbox {
@@ -514,14 +526,11 @@ li {
     background-color: var(--White-background-color);
     box-shadow: 0px 2px 10px 0px lightgrey;
     border-radius: 5px;
-    width: 85%;
+    width: auto;
     max-width: 416px;
-    padding: 24px;
-    padding-top: 48px;
+    padding: 48px 0px 24px 24px;
     margin-top: 30px;
-    flex-basis: 90%;
     margin-right: 24px;
-    height: 329px;
 }
 
 .commenttag {
@@ -561,6 +570,7 @@ li {
     display: flex;
     font-family: var(--font-family-standard);
     color: var(--smalltext-color);
-    margin-bottom: 20px;
     padding: 24px 0px 24px 0px;
+    width: 85%;
+    line-height: 30px;
 }
