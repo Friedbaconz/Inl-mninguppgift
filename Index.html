@@ -15,22 +15,25 @@
     <body class="Mainpage">
 
         <header>
-            <div class="headers">
+            <div class="header">
 
                 <section class="navbar"> 
-                    <div class="content-wrapper">
-                        <img class="logo" src="logo/solid.svg">
+                    <div class="navbar-wrapper">
+                        <div class="logotyp">
+                           <a href="Index.html"><img class="logoimg" src="logo/solid.svg" alt="logotyp/logo"></a>
+                        </div>
                         <div class="nav-right">
                             <div class="darkmodebutton"> 
                                 <p class="darkmodetext">Dark Mode</p>
-                                <span class="boxbutton">
+                                <div class="darkmodeslider">
                                     <span class="circle"></span>
-                                </span>
+                                </div>
                             </div>
-
                             <div class="login">
-                                <img class="bi-person" src="logo/icon-l.svg">
-                                <a class="logintext" href="...">Sign in / up</a>
+                                <a class="loginbtn" href="Index.html">
+                                    <img class="bi-person" src="logo/icon-l.svg">
+                                    <span class="logintext">Sign in / up</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -44,14 +47,24 @@
 
                 <section class="title">
                     <div Class="herotextbox">
-                        <p class="herotext1">Manage All Your Money in One App</p> 
                         <div class="smalltext">
+                            <p class="herotext1">Manage All Your Money in One App</p> 
                             <p class="herotext2">We offer you a new generation of the mobile banking.</p>
                             <p class="herotext3">Save, spend & manage money in your pocket.</p> 
                         </div>
                         <div class="storelinks">
-                            <img src="logo/appstore.svg" class="appstore" href="...">
-                            <img src="logo/googleplay.svg" class="googleplay" href="...">
+                            <a href="..." class="store">
+                                <span class="downloadstore">Download on the</span>
+                                <img src="logo/appstore.svg" class="storeimg">
+                                <span class="storetitle">App store</span>
+                            </a>
+
+                            <a href="..." class="store">
+                                <span class="downloadstore">GET IT ON</span>
+                                <img src="logo/googleplay.svg" class="storeimg">
+                                <span class="storetitle">Google Play</span>
+                            </a>
+                            
                         </div>
                     </div>
 
@@ -63,63 +76,80 @@
                 
             </section>
 
-            <section class="brands">
-                <div class="Logo">
-                    <section class="logo1">
-                        <img src="logo/logoipsum.svg" class="logo2">
-                        <img src="logo/logoipsum2.svg" class="logo2">
-                        <img src="logo/logoipsum3.svg" class="logo2">
-                        <img src="logo/logoipsum4.svg" class="logo2">
-                        <img src="logo/logoipsum5.svg" class="logo2">
-                        <img src="logo/logoipsum6.svg" class="logo2">
+            <section class="brands-features">
+                <div class="brandlogo">
+                    <section class="brandlogowrapper">
+                        <a href="..." class="logobox">
+                            <img src="logo/Brandlogo1.svg" class="logoicon">
+                        </a>
+
+                        <a href="..." class="logobox">
+                            <img src="logo/Brandlogo2.svg" class="logoicon">
+                        </a>
+
+                        <a href="..." class="logobox">
+                            <img src="logo/Brandlogo3.svg" class="logoicon">
+                        </a>
+
+                        <a href="..." class="logobox">
+                            <img src="logo/Brandlogo4.svg" class="logoicon">
+                        </a>
+
+                        <a href="..." class="logobox">
+                            <img src="logo/Brandlogo5.svg" class="logoicon">
+                        </a>
+
+                        <a href="..." class="logobox">
+                            <img src="logo/Brandlogo6.svg" class="logoicon">
+                        </a>
                     </section>
                 </div>
-                <div class="featuresapp">
-                    <img src="logo/imagefeature.svg" alt="" class="featurephone">
+                <div class="features">
+                    <img src="logo/imagefeature.svg" alt="" class="featurephoneimg">
                     <div class="featuretext">
                         <div class="appfeaturehead">
-                            <h1 class="apptitle">App Features</h1>
-                            <p class="apptitletext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+                            <h1 class="featuretitle">App Features</h1>
+                            <p class="featuretitletext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
                         </div>
-                        <div class="featurebox">
-                            <div class="iconbox">
-                                <img src="logo/iconpay.svg" alt="" class="iconboximg">
+                        <div class="featureboxgroup">
+                            <div class="featurebox">
+                                <img class="imgboxfeature" src="logo/credit-card.svg" alt="">
                                 <div class="iconfill">
                                     <h2>Easy Payments</h2> 
                                     <p class="iconboxtext">Id mollis consectetur congue egestas egestas suspendisse blandit justo. </p>
                                 </div>
                             </div>
-                            <div class="iconbox">
-                                <img src="logo/icondata.svg" alt="" class="iconboximg">
-                                <div>
+                            <div class="featurebox">
+                                <img src="logo/shield.svg" alt="" class="imgboxfeature">
+                                <div class="iconfill">
                                     <h2>Data Security</h2> 
                                     <p class="iconboxtext">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
                                 </div>
                             </div>
-                            <div class="iconbox">
-                                <img src="logo/iconstat.svg" alt="" class="iconboximg">
-                                <div>
+                            <div class="featurebox">
+                                <img src="logo/bars-graphic.svg" alt="" class="imgboxfeature">
+                                <div class="iconfill">
                                     <h2>Cost Statistics</h2> 
                                     <p class="iconboxtext">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh. </p>
                                 </div>
                             </div>
-                            <div class="iconbox">
-                                <img src="logo/iconsupport.svg" alt="" class="iconboximg">
-                                <div>
+                            <div class="featurebox">
+                                <img src="logo/communication.svg" alt="" class="imgboxfeature">
+                                <div class="iconfill">
                                     <h2>Support 24/7</h2> 
                                     <p class="iconboxtext">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris. </p>
                                 </div>
                             </div>
-                            <div class="iconbox">
-                                <img src="logo/iconcash.svg" alt="" class="iconboximg">
-                                <div>
+                            <div class="featurebox">
+                                <img src="logo/wallet.svg" alt="" class="imgboxfeature">
+                                <div class="iconfill">
                                     <h2>Regular Cashback</h2> 
                                     <p class="iconboxtext">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend. </p>
                                 </div>
                             </div>
-                            <div class="iconbox">
-                                <img src="logo/icontop.svg" alt="" class="iconboximg">
-                                <div>
+                            <div class="featurebox">
+                                <img src="logo/happy.svg" alt="" class="imgboxfeature">
+                                <div class="iconfill">
                                     <h2>Top Standards</h2> 
                                     <p class="iconboxtext">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu. </p>
                                 </div>
@@ -138,7 +168,11 @@
                         </div class="hdiw-text"> 
                             <h1 class="hdiw-text"> How Does It Work?</h1>
                         </div>
-                        <img src="logo/carousel.svg" alt="" class="carousel">
+                        <div class="carousel">
+                            <img src="logo/iPhone1.svg" alt="" class="iphonehidden">
+                            <img src="logo/iPhone2.svg" alt="" class="iphoneshow">
+                            <img src="logo/iPhone3.svg" alt="" class="iphonehidden">
+                        </div>
                         <div class="hdiw-filler">
                             <h2 class="h2hdiw">Latest transaction history</h2>
                             <P class="phdiw">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum. </P>
@@ -159,22 +193,24 @@
                                 <li><p class="listpoint">No monthly cash commission</p></li>
                                 <li><p class="listpoint">Manage payments and transactions online</p></li>
                             </ul>
-                            <div class="learnmore">
-                                <p class="learnmoretext">Learn more</p>
-                                <span class="learnmorebutton"></span>
-                                <img src="logo/icon-r.svg" alt="" class="learnmoreimg">
+                            <div>
+                                <a href="..." class="learnmore">
+                                    <span class="learnmoretext">Learn more</span>
+                                    <span class="learnmorebutton"></span>
+                                    <img src="logo/icon-r.svg" alt="" class="learnmoreimg">
+                                </a>
                             </div>
                             
                         </div>
 
                         <div class="imgupper">
-                            <img src="logo/imagelistf.svg" alt="">
+                            <img src="logo/imagelistf.svg" alt="" class="bigimagefeature">
                         </div>
                     </div>
 
                     <div class="upperfeatures">
                         <div class="imglower">
-                            <img src="logo/imagelower.svg" alt="">
+                            <img src="logo/imagelower.svg" alt="" class="bigimagefeature">
                         </div>
                         <div class="textlower">
                             <h2 class="h2appfeatures">Recive payment from international bank details</h2>
@@ -190,10 +226,12 @@
                                 </div>
                             </div>
 
-                            <div class="learnmore">
-                                <p class="learnmoretext">Learn more</p>
-                                <span class="learnmorebutton"></span>
-                                <img src="logo/icon-r.svg" alt="" class="learnmoreimg">
+                            <div>
+                                <a href="..." class="learnmore">
+                                    <span class="learnmoretext">Learn more</span>
+                                    <span class="learnmorebutton"></span>
+                                    <img src="logo/icon-r.svg" alt="" class="learnmoreimg">
+                                </a>
                             </div>
 
                         </div>
