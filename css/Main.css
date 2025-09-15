@@ -970,10 +970,10 @@ li {
     padding: 16px 24px;
 }
 
-.active{
+.active {
+    transition: ease 300ms;
     .arrow{
         background-color:var(--purple-signin);
-        margin-bottom: 24px;
     }
 
     .arrowpointoff {
@@ -984,12 +984,11 @@ li {
         display: block;
     }
 
-    .panel-title {
-        margin-bottom: 24px;
-    }
 }
 
-
+.paneltext {
+    padding: 16px 5px;
+}
 
 
 
