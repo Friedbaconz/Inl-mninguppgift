@@ -93,16 +93,16 @@ body {
     width: 46px;
     background-color: var(--gray-button-color);
     border-radius: 12px;
-    align-items: center;
     justify-content: start;
+    cursor: pointer;
 
     .circle {
-    display: flex;
-    height: 20px;
-    width: 20px;
-    background-color: var(--White-background-color);
-    border-radius: 12px;
-    margin-left: 2px;
+        margin: auto;
+        height: 20px;
+        width: 20px;
+        background-color: var(--White-background-color);
+        border-radius: 12px;
+        margin-left: 2px;
     }
 }
 
@@ -492,7 +492,7 @@ button, .store {
 }
 
 .hdiw-filler {
-    display: flex;
+    display: block;
     width: 50%;
     margin: auto;
     flex-wrap: wrap;
@@ -506,10 +506,11 @@ button, .store {
     margin-top: 12px;
     font-size: 16px;
     line-height: 160%;
-    width: 70%;
+    width: 60%;
     color: var(--smalltext-color);
     display: flex;
     line-height: auto;
+    margin: auto;
 }
 
 
@@ -665,6 +666,10 @@ li {
 .h2appfeatures {
     display: flex;
     font-size: 32px;
+    width: 100%;
+    @media (width >= 768px) {
+       width: 95%;
+    }
 }
 
 .imgboxfeature {
@@ -681,44 +686,46 @@ li {
 
 
 .testaimonials {
-    display:flex;
+    display:block;
     height: 100%;
-    margin: auto;
+    width: 100%;
     align-items: center;
-    max-width: auto;
-    width:100%;
-    padding-bottom: 90px;
     background-color: var(--hdiw-background);
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .testaimonialwrapper {
     display: block;
-    justify-content: space-between;
-    width: auto;
+    justify-content: center;
     margin: auto;
-    padding:10px;
-    padding-top: 90px;
+    padding: 25px;
+    gap:90px;
     @media (width >= 768px) {
         display: flex;
+        padding: 0px;
     }
 
 }
 
 .testaimonialhead {
-    width: 306px;
+    display: flex;
+    width: 60%;
     font-family: var(--font-family-standard);
-    margin-right: 90px;
     margin-left: 0px;
     
     font-weight: bold;
     font-size: larger;
     @media (width >= 768px) {
-        margin-left: 150px;
+        width: 15%;
     }
 }
 
 .commentbox {
     display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
     @media (width >= 768px) {
         display: flex;
     }
@@ -727,14 +734,13 @@ li {
 .reviewbox {
     display: block;
     align-items: center;
+    width: auto;
     background-color: var(--White-background-color);
     box-shadow: 0px 2px 10px 0px lightgrey;
     border-radius: 5px;
-    width: auto;
-    max-width: 416px;
     padding: 48px 0px 24px 24px;
+    max-width:416px;
     margin-top: 30px;
-    margin-right: 24px;
 }
 
 .commenttag {
@@ -772,6 +778,8 @@ li {
 
 .commenttext {
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-family-standard);
     color: var(--smalltext-color);
     padding: 24px 0px 24px 0px;
@@ -1014,4 +1022,121 @@ li {
     font-family: var(--font-family-standard);
     font-size: 14px;
     color: var(--smallergreytext);
+}
+
+
+
+
+
+.subscribe {
+    display:flex;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    max-width: auto;
+    width:100%;
+}
+
+.subscribe-wrapper {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 3px;
+    background-color: var(--hdiw-background);
+    border-radius: 8px;
+}
+
+.media-subcribe {
+    display: block;
+    align-items: center;
+    margin: auto;
+    padding:50px 10px;
+
+    @media (width >= 768px) {
+        display: flex;
+        padding:80px 130px;
+    }
+}
+
+.subscribe-info {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+
+    .bell-icon {
+        display: block;
+    }
+
+    .subscribe-text {
+        display: none;
+        font-weight: bold;
+        font-family: var(--font-family-standard);
+        font-size: 24px;
+        width: 500px;
+        @media (width >= 768px) {
+            display: block;
+        }
+    }
+
+    .subscribe-text2 {
+        display: block;
+        font-weight: bold;
+        font-family: var(--font-family-standard);
+        font-size: 24px;
+        width: 50%;
+        @media (width >= 768px) {
+            display:none ;
+        }
+    }
+}
+
+.subscribe-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 8px;
+    margin-top: 50px;
+    @media (width >= 768px) {
+        margin-top: 0px;
+    }
+}
+
+.subscribe-button {
+    display: flex;
+    color: white;
+    font-family: var(--font-family-standard);
+    font-size: 16px;
+    background-color: var(--purple-signin);
+    padding: 15px 32px;
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.email-input {
+    font-family: var(--font-family-standard);
+    font-size: 16px;
+    color: var(--smallergreytext);
+    border:none;
+    padding: 13px 13px;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid var(--Bar-border);
+    width: 100%;
+}
+
+input[type=email] {
+    background-color: white;
+    background-image: url("/logo/bx-envelope.svg");
+    background-position: 13px 15px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
 }
