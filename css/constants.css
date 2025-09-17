@@ -10,9 +10,23 @@
     --icon-background-color: #EFF2FC;
     --green-text: #22C55E;
     --Bar-border: #D4D7E5;
+    --basic-text-color: #000000;
+    --radial-color1: #6366F11A;
+    --radial-color2: #DA46EF0D;
+    --radial-color3: #F1F4FD12;
+    --radial-color4: #ffffffff;
+    --basic-text-color-opsite: #ffffff;
+
 }
 
 [data-theme="dark"] {
     --White-background-color: #0B0F19;
     --font-family-standard: "Manrope", sans-serif;
+    --basic-text-color: #ffffff;
+    --radial-color1: rgba(99, 102, 241, 0.1);
+    --radial-color2: rgba(219, 70, 239, 0.003);
+    --radial-color3: rgba(241, 244, 253, 0.007);
+    --radial-color4: #0b0f19;
+    --icon-background-color: #6365f10e;
+    --basic-text-color-opsite: #000000;
 }

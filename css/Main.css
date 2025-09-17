@@ -10,6 +10,7 @@
 body {
     max-width: auto;
     margin: auto;
+    background-color: var(--White-background-color);
 }
 
 .header {
@@ -152,6 +153,7 @@ button, .loginbtn {
     font-family: var(--font-family-standard);
     margin-left: 8px;
     border-radius: 4px;
+    color: white;
     @media (width >= 768px) {
         display: flex;
     }  
@@ -172,8 +174,7 @@ button, .loginbtn {
     max-width: auto;
     
     width:100%;
-    background-color: var(--White-background-color);
-    background: radial-gradient(ellipse at bottom, #6366F11A 0%, #DA46EF0D 42%, #F1F4FD12 83%, #ffffffff 100%);
+    background: radial-gradient(ellipse at bottom, var(--radial-color1) 0%, var(--radial-color2) 42%, var(--radial-color3) 83%, var(--radial-color4) 100%);
 }
 
 .title {
@@ -195,7 +196,7 @@ button, .loginbtn {
 .herotextbox {
     display: block;
     max-width: 526px;
-    
+    color: var(--basic-text-color);
 }
 
 .herotext1 {
@@ -224,7 +225,6 @@ button, .loginbtn {
 .storelinks {
     display: flex;
     margin-top: 40px;
-
     gap: 1rem;
     @media (width >= 768px) {
       margin-top: 80px;
@@ -237,13 +237,14 @@ button, .store {
     grid-template-areas:    "icon text"
                             "icon store";
 
-    background-color: black;
+    background-color: var(--basic-text-color);
     color: white;
     font-family: var(--font-family-standard);
     text-decoration: none;
     padding: 8px 20px;
     border-radius: 8px;  
     transition: ease 300ms;
+    color: black;
 
     @media (width >= 768px) {
       padding: 8px 25px;
@@ -305,6 +306,10 @@ button, .store {
         height: 100%;
         
     }
+}
+
+.store {
+    color: var(--basic-text-color-opsite)
 }
 
 
@@ -595,6 +600,10 @@ li {
     bottom: 4px;
 }
 
+.featuretitle {
+    color: var(--basic-text-color);
+}
+
 .learnmore {
     display: flex;
     width: 159px;
@@ -692,6 +701,10 @@ li {
     border-radius: 8px;
     width: 60px;
     height: 60px;
+}
+
+.iconfill {
+    color: var(--basic-text-color);
 }
 
 
