@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1,0">
         <meta name="keywords" content="html, uppgift, webbutveckling, css, layout">
         <link rel="stylesheet" href="/Css/Main.css">
+        <link rel="stylesheet" href="/Css/constants.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 
@@ -25,9 +26,11 @@
                         <div class="nav-right">
                             <div class="darkmodebutton"> 
                                 <p class="darkmodetext">Dark Mode</p>
-                                <div class="darkmodeslider">
-                                    <span class="circle"></span>
-                                </div>
+                                <label for="darkmodeslider" class="slidertheme">
+                                   <button onclick="toggleTheme()" class="darkmodeslider">
+                                        <div class="circle"></div> 
+                                   </button>
+                                </label>
                             </div>
                             <div class="login">
                                 <a class="loginbtn" href="Index.html">
@@ -521,22 +524,37 @@
         </style>
 
         <script>
+        let currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme)
+
         var acc = document.getElementsByClassName("accordion-btn");
         var i;
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-                } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
+                var close = false;
+                if(this.classList.contains("active")){
+                    close = true;
                 }
+
+                var activepanels = document.getElementsByClassName("active");
+                for (c = 0; c < activepanels.length; c++) {
+                    activepanels[c].nextElementSibling.style.maxHeight = null;
+                    activepanels[c].classList.remove("active");
+                }
+                
+                var panel = this.nextElementSibling;
+                if(!close)
+                {
+                    this.classList.add("active");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+                
             });
         }
         </script>
 
+        <script src="scripts.js"></script>
     </body>
 
 </html>

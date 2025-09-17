@@ -13,5 +13,6 @@
 }
 
 [data-theme="dark"] {
-    --White-background-color: #ffffff;
+    --White-background-color: #0B0F19;
+    --font-family-standard: "Manrope", sans-serif;
 }
