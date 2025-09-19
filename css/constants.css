@@ -16,7 +16,9 @@
     --radial-color3: #F1F4FD12;
     --radial-color4: #ffffffff;
     --basic-text-color-opsite: #ffffff;
-
+    --comment-box-color: white;
+    --shadow-color: lightgray;
+    --faq-tab: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -29,4 +31,11 @@
     --radial-color4: #0b0f19;
     --icon-background-color: #6365f10e;
     --basic-text-color-opsite: #000000;
+    --smalltext-color: #ffffff9d;
+    --logo-box: #e2e5f111;
+    --hdiw-background: #ffffff07;
+    --faq-tab:#1d1f29;
+    --comment-box-color: #1d1f29;
+    --shadow-color: #0000005d;
+    --Bar-border:#565973;
 }
