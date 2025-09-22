@@ -79,6 +79,11 @@ body {
     }
 }
 
+.linklogo{
+    display: flex;
+    text-decoration: none;
+}
+
 .darkmodebutton {
     display: flex;
     justify-content: center;
@@ -110,10 +115,11 @@ body {
     .slidertheme input {
         display:none;
     }
+    
 }
 
 .darkmodeslider {
-    display: flex;
+    display: block;
     margin-top: 5px;
     height: 24px;
     width: 46px;
@@ -121,17 +127,44 @@ body {
     border-radius: 12px;
     justify-content: start;
     cursor: pointer;
+    border: none;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        box-shadow: none;
+        border: none;
+    }
+
+
+}
+
+.darkmodeslider:active {
+    .darkmodeslider {
+        background-color: var(--purple-signin);
+    }
+    .circle {
+
+        right: -2.5px;
+    }
 }
 
 .circle {
     background-color: white;
-    margin: auto;
     cursor: pointer;
     height: 20px;
     width: 20px;
-    background-color: var(--White-background-color);
     border-radius: 12px;
-    margin-left: 2px;
+    margin: auto;
+    
+    position: relative;
+    right: 17px;
+    bottom:8px;
+
+    animation-duration: 300ms;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+    transition: ease-in-out 300ms;
 }
 
 .login {
@@ -245,7 +278,7 @@ button, .loginbtn {
     }
 }
 
-button, .store {
+.store {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-areas:    "icon text"
@@ -260,9 +293,12 @@ button, .store {
     transition: ease 300ms;
     color: black;
 
+    
+
     @media (width >= 768px) {
-      padding: 8px 25px;
-      column-gap: 1rem;
+        padding: 8px 0px 8px 25px;
+        column-gap: 1rem;
+        width: 37%;
     }
     .downloadstore {
         grid-area: text;
@@ -300,6 +336,7 @@ button, .store {
 
     #appstoreblack {
         display: none;
+        
     }
 }
 
@@ -322,7 +359,16 @@ button, .store {
     .logobox:hover {
         background-color: var(--logo-box);
     }
-
+    .darkmodeslider {
+        background-color: var(--purple-signin);
+    }
+    .circle {
+        right: -2.5px;
+        bottom:8px;
+    }
+    .active-panel {
+    border: 1px solid rgba(128, 128, 128, 0.322);
+    }
 }
 
 .heroimg {
@@ -866,6 +912,18 @@ li {
     line-height: 30px;
 }
 
+.stars {
+    display: flex;
+    max-width: 20%;
+    flex:auto;
+    
+    
+    &:hover{
+        filter: drop-shadow( 1px 4px 1px var(--shadow-color));
+        filter: brightness(120%);
+    }
+}
+
 
 
 
@@ -1002,7 +1060,14 @@ li {
     margin-bottom: 16px;
     border-radius: 8px;
     padding: 16px 0px;
-    
+    border: 1px solid none;
+}
+
+.faq-accordion:hover {
+    cursor: pointer;
+    .arrow {
+        background-color: var(--gray-button-color);
+    }
 }
 
 .accordion-btn {
@@ -1064,6 +1129,9 @@ li {
 
 .active {
     transition: ease 300ms;
+    .faq-accordion {
+        border-color: black;
+    }
 
     .arrow{
         background-color:var(--purple-signin);
@@ -1087,7 +1155,14 @@ li {
         }
     }
 
-    
+}
+
+.active-panel:hover {
+    .arrow {
+        
+        background-color: #38398a;
+        
+    }
 }
 
 .paneltext {
@@ -1098,6 +1173,7 @@ li {
 #darkarrow {
     display: none;
 }
+
 
 
 
@@ -1214,6 +1290,7 @@ li {
 input[type=email] {
     background-color: var(--icon-background-color);
     background-image: url("/logo/bx-envelope.svg");
+    background-: ;
     background-position: 13px 15px;
     background-repeat: no-repeat;
     padding-left: 40px;

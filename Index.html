@@ -21,8 +21,7 @@
                 <section class="navbar"> 
                     <div class="navbar-wrapper">
                         <div class="logotyp">
-                           <a href="Index.html"><img class="logoimg" src="logo/Group-2.svg" alt="logotyp/logo"></a>
-                           <h2 class="silicon">Silicon</h2>
+                           <a href="Index.html" class="linklogo"><img class="logoimg" src="logo/Group-2.svg" alt="logotyp/logo"><h2 class="silicon">Silicon</h2></a>
                         </div>
                         <div class="nav-right">
                             <div class="darkmodebutton"> 
@@ -284,8 +283,13 @@
 
                                 <img class="commenttag" src="logo/qouter.svg" alt="">
                                 <div class="reviewbox">
-
-                                    <img class="rating" src="logo/rating3.svg" alt="">
+                                    <a href="..." class="stars">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                        <img class="rating" src="logo/starempty.svg" alt="">
+                                    </a>
                                     <p class="commenttext">
                                     Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. 
                                     Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. 
@@ -305,7 +309,13 @@
                                 <img class="commenttag" src="logo/qouter.svg" alt="">
                                 <div class="reviewbox">
 
-                                    <img class="rating" src="logo/rating2.svg" alt="">
+                                    <a href="..." class="stars">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                        <img class="rating" src="logo/staryellow.svg" alt="">
+                                    </a>
                                     <p class="commenttext">
                                     Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. 
                                     Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. 
@@ -365,7 +375,7 @@
                     <div class="accordion-wrapper">
                         <div class="faq-accordion">
 
-                        
+                            
                             <div class="accordion-btn">
                         
                                 <p class="panel-title">Is any of my personal information stored in App?</p>
@@ -569,6 +579,7 @@
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
                 var close = false;
+
                 if(this.classList.contains("active")){
                     close = true;
                 }
@@ -576,12 +587,14 @@
                 var activepanels = document.getElementsByClassName("active");
                 for (c = 0; c < activepanels.length; c++) {
                     activepanels[c].nextElementSibling.style.maxHeight = null;
+                    activepanels[c].parentNode.classList.remove("active-panel");
                     activepanels[c].classList.remove("active");
                 }
-                
+
                 var panel = this.nextElementSibling;
                 if(!close)
                 {
+                    this.parentNode.classList.add("active-panel");
                     this.classList.add("active");
                     panel.style.maxHeight = panel.scrollHeight + "px";
                 }

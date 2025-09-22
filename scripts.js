@@ -14,6 +14,3 @@ const toggleTheme = () => {
     document.documentElement.setAttribute('data-theme', currentTheme)
     localStorage.setItem('theme', currentTheme)
 }
-
-
-
