@@ -1290,7 +1290,6 @@ li {
 input[type=email] {
     background-color: var(--icon-background-color);
     background-image: url("/logo/bx-envelope.svg");
-    background-: ;
     background-position: 13px 15px;
     background-repeat: no-repeat;
     padding-left: 40px;
