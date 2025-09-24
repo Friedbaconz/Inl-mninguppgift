@@ -19,6 +19,8 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    height: 75px;
+    top: 0px;
 }
 
 .navbar {
@@ -26,11 +28,12 @@ body {
     background-color: var(--White-background-color);
     padding: 0 15px;
     height: 76px;
+    margin: auto;
     width: 100%;
 
     .navbar-wrapper{
     display:flex;
-    max-width:1296px;
+    max-width:flex;
     width:100%;
     margin:auto;
     position:relative;
@@ -39,38 +42,41 @@ body {
 
     .nav-right{
     display:flex;
+    
+    justify-content: end;
+    align-items: end;
     position:absolute;
     right:0px;
+    }
+    @media (width >= 700px) {
+        width: 69%;
     }
 }
 
 .logotyp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    
+    
     padding: auto;
     margin-bottom: 25px;
-
     .logoimg {
-    display: flex;
-    margin-top: 20px;
-    height: 35px;
-    width: 100px;
-    transition: ease 300ms;
-        @media (width >= 768px) {
-        height: 44px;
-        width: 122px;
+        display: flex;
         margin-top: 20px;
+        width: 100%;
+        transition: ease 300ms;
+        margin-right: 9px;
+        @media (width >= 700px) {
+            
+            margin-top: 20px;
         }
 
     }
     
     .silicon {
-        position: relative;
         font-family: var(--font-family-standard);
-        right: 30px;
         display: flex;
         margin: auto;
+
         align-items: center;
         justify-content: center;
         margin-top: 25px;
@@ -82,97 +88,91 @@ body {
 .linklogo{
     display: flex;
     text-decoration: none;
+    gap: 0px;
+    width: auto;
+}
+
+.btn-wrapper{
+    display: flex;
 }
 
 .darkmodebutton {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
     margin-right: 30px;
+    justify-content: center;
+    align-items: center;
 
     .darkmodetext {
-    font-family: var(--font-family-standard);
-    font-size: 16px;
-    padding:12px 0;
-    line-height: 160%;
-    margin-right: 16px;
-    display: none;
-    transition: ease 300ms;
-    color: var(--smalltext-color);
-        @media (width >= 768px) {
+        font-family: var(--font-family-standard);
+        font-size: 16px;
+        line-height: 160%;
+        margin-right: 16px;
+        display: none;
+        transition: ease 300ms;
+        color: var(--smalltext-color);
+        @media (width >= 700px) {
             display: flex;
         }
     }
 }
 
-.slidertheme {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-
-    .slidertheme input {
-        display:none;
-    }
-    
-}
-
 .darkmodeslider {
-    display: block;
-    margin-top: 5px;
-    height: 24px;
-    width: 46px;
+    display: flex;
+    margin-top: 12px;
     background-color: var(--gray-button-color);
-    border-radius: 12px;
-    justify-content: start;
+    border-radius: 40px;
     cursor: pointer;
     border: none;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    justify-content: end;
+    padding: 0px 30px;
+    height: 32px;
 
     &:hover {
         box-shadow: none;
         border: none;
     }
-
-
-}
-
-.darkmodeslider:active {
-    .darkmodeslider {
-        background-color: var(--purple-signin);
+    @media (width >= 700px) {
+        padding: 0px 22px;
+        height: 24px;
+        border-radius: 12px;
     }
-    .circle {
 
-        right: -2.5px;
-    }
 }
 
 .circle {
+    display: flex;
     background-color: white;
     cursor: pointer;
-    height: 20px;
-    width: 20px;
-    border-radius: 12px;
-    margin: auto;
-    
-    position: relative;
-    right: 17px;
-    bottom:8px;
-
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
     animation-duration: 300ms;
     animation-timing-function:ease-in-out;
     animation-fill-mode: forwards;
     transition: ease-in-out 300ms;
+    margin: auto;
+    
+    position: absolute;
+    top: 4px;
+    @media (width >= 700px) {
+       top: 9px;
+       height: 20px;
+        width: 20px;
+        border-radius: 12px;
+    }
 }
 
 .login {
-    display: flex;
+    display: none;
     margin: auto;
+    @media (width >= 700px) {
+       display: flex;
+    }
 }
 
-button, .loginbtn {
+.loginbtn {
     display: flex;
     margin: auto;
     font-size: 14px;
@@ -181,12 +181,8 @@ button, .loginbtn {
     text-decoration: none;
     line-height: 18px; 
     transition: ease 300ms;
-    padding: 10px 10px;
+    padding: 10px 20px;
     border-radius: 4px;
-
-    @media (width >= 768px) {
-        padding: 10px 20px;
-    }
 
     &:hover {
         background-color: var(--gray-button-color);
@@ -199,19 +195,46 @@ button, .loginbtn {
     display: none;
     font-family: var(--font-family-standard);
     margin-left: 8px;
-    border-radius: 4px;
+    
     color: white;
-    @media (width >= 768px) {
+    @media (width >= 700px) {
         display: flex;
     }  
 
     .bi-person {
-    margin: auto;
     width: 15px;
     height: 15px;
     }
 }
 
+.menu-box {
+    display: block;
+    width: 30px;
+    height: 36px;
+    background-color: var(--White-background-color);
+    margin: auto;
+    padding-top: 2px;
+    margin-left: 10px;
+    margin-right: 20px;
+    .menu-line {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        
+        padding: 2px 22px;
+        background-color: var(--menu-tab-color);
+        
+    }
+    @media (width >= 700px) {
+        display: none;
+    }
+}
+
+.menu-box:hover {
+    .menu-line {
+        background-color: var(--smallergreytext);
+    }
+}
 
 
 
@@ -222,6 +245,7 @@ button, .loginbtn {
     
     width:100%;
     background: radial-gradient(ellipse at bottom, var(--radial-color1) 0%, var(--radial-color2) 42%, var(--radial-color3) 83%, var(--radial-color4) 100%);
+    
 }
 
 .title {
@@ -230,11 +254,11 @@ button, .loginbtn {
     height: 100%;
     width: 100%;
     align-items: center;
-    padding-right: 0px;
+    justify-content: center;
     position: relative;
     margin: auto;
-    padding: 0px 15px;
     transition: ease 300ms;
+    
     @media (width >= 768px) {
        display: flex;
     }
@@ -242,39 +266,58 @@ button, .loginbtn {
 
 .herotextbox {
     display: block;
-    max-width: 526px;
+    margin: auto;
+    
+    margin-top: 200px;
     color: var(--basic-text-color);
+    text-align: center;
+    @media (width >= 700px) {
+        text-align: start;
+        
+    }
+}
+
+.smalltext {
+    display: block;
+
 }
 
 .herotext1 {
-    font-size: 56px;
+    font-size: 40px;
     font-family: var(--font-family-standard);
     font-weight: bold;
     margin-bottom: 24px;
     line-height: 130%;
+    width: 95%;
+    @media (width >= 700px) {
+        font-size: 56px;
+        width: 100%;
+    }
 }
 
 .herotext2 {
-    font-size: 18px;
-    font-family: var(--font-family-standard);
-    color: var(--smalltext-color);
-    line-height: 160%;
-    
-}
 
-.herotext3 {
     font-size: 18px;
     font-family: var(--font-family-standard);
     color: var(--smalltext-color);
     line-height: 160%;
+    width: 100%;
+    @media (width >= 700px) {
+        width: 85%;
+        
+    }
 }
 
 .storelinks {
-    display: flex;
+    padding: 0px 15px;
+    display: block;
     margin-top: 40px;
-    gap: 1rem;
-    @media (width >= 768px) {
-      margin-top: 80px;
+    margin-bottom: 100px;
+    gap: 25px;
+    @media (width >= 700px) {
+        margin-top: 80px;
+        display: flex;
+        padding: 0px;
     }
 }
 
@@ -292,39 +335,53 @@ button, .loginbtn {
     border-radius: 8px;  
     transition: ease 300ms;
     color: black;
-
+    margin-bottom: 20px;
+    margin-left: 0px;
+    justify-content: end;
     
 
-    @media (width >= 768px) {
-        padding: 8px 0px 8px 25px;
+    @media (width >= 700px) {
+        margin-bottom: auto;
+        padding: 8px 40px 8px 20px;
         column-gap: 1rem;
-        width: 37%;
+        height: 65px;
     }
+    
     .downloadstore {
         grid-area: text;
         font-size: 0.7em;
         font-weight: 600;
         margin-left: 5px;
-        display: none;
-        @media (width >= 768px) {
-            display: flex;
+        text-align: center;
+        position: relative;
+        top: 3px;
+    
+        @media (width >= 700px) {
+            margin-left: 0px;
         }
     }
 
     .storeimg {
         margin: auto;
         grid-area: icon;
-        height: 80%;
+        height: auto;
+        position: relative;
+        left: 100px;
+        @media (width >= 700px) {
+            margin-left: 0px;
+            left: 0px;
+        }
     }
 
     .storetitle {
+        margin: auto;
         grid-area: store;
-        font-size: 1.1em;
+        font-size: 1.4em;
         font-weight: 600;
-        margin-left: 5px;
-        display: none;
-        @media (width >= 768px) {
-            display: flex;
+        margin-left: auto;
+        position: relative;
+        @media (width >= 700px) {
+            margin-left: 0px;
         }
     }
 
@@ -361,37 +418,36 @@ button, .loginbtn {
     }
     .darkmodeslider {
         background-color: var(--purple-signin);
+        justify-content: start;
     }
-    .circle {
-        right: -2.5px;
-        bottom:8px;
-    }
+
     .active-panel {
     border: 1px solid rgba(128, 128, 128, 0.322);
     }
 }
 
 .heroimg {
-    display: flex;
+    display: none;
     margin: auto;
+    margin-top: 150px;
+    align-items: baseline;
+    justify-content: baseline;
+
+    @media (width >= 700px) {
+        display: flex;
+    }
 }
 
 .phone {
-    display: block;
+    display: none;
+    margin: auto;
+    align-items: baseline;
     justify-content: baseline;
-    margin-left: 10px;
-    margin-top: 0px;
-    width: 80%;
-    height: 80%;
-    flex-shrink: 50%;
-    flex-grow: 100%;
-    flex-basis: 100%;
-    @media (width >= 768px) {
-        justify-content: right;
-        margin-top: 190px;
-        width: 100%;
-        height: 100%;
-        
+    
+    
+    @media (width >= 700px) {
+        display: block;
+
     }
 }
 
@@ -400,6 +456,12 @@ button, .loginbtn {
 }
 
 
+.brandlogo > section {
+    display: none;
+    @media (width >= 700px) {
+        display: flex;
+    }
+}
 
 .brandlogo {
     display: flex;
@@ -578,51 +640,64 @@ button, .loginbtn {
 }
 
 .carousel {
-    display: flex;
+    display: block;
     width: 80vw;
     margin: auto;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
     align-items: center;
     align-content: center;
     text-align: center;
     gap:5vw;
-    @media (width >= 768px) {
+    @media (width >= 700px) {
         width: 50vw;
     }
 
     .item {
-    margin: auto;
-    list-style-type: none;
-    padding: 20px;
-    flex: 0 0 100%;
-    scroll-snap-align: center;
-    font-family: var(--font-family-standard);
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 3rem;
+        align-items: center;
     }
 }
 
-.iphonehidden {
+.iphoneshidden {
+    display: none;
+    align-items: center;
+    margin: auto;
+    @media (width >= 700px) {
+        display: flex;
+    }
+}
+
+.iphoneshow {
     display: flex;
     align-items: center;
     margin: auto;
 }
 
 .h2hdiw {
+    font-family: var(--font-family-standard);
     font-weight: bold;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 12px;
     color: var(--basic-text-color);
 }
 
 .phdiw {
+    font-family: var(--font-family-standard);
     margin-top: 12px;
     font-size: 16px;
     line-height: 160%;
-    width: 60%;
+    width: 100%;
     color: var(--smalltext-color);
     display: flex;
     line-height: auto;
+    align-items: center;
     margin: auto;
+    @media (width >= 700px) {
+        width: 60%;
+    }
 }
 
 
@@ -630,13 +705,23 @@ button, .loginbtn {
 
 
 .appfeatures{
-    display:flex;
+    display:none;
     height: auto;
     margin: auto;
     align-items: center;
     max-width: auto;
     width:100%;
     padding-bottom: 100px;
+    @media (width >= 768px) {
+        display: flex;
+    }  
+}
+
+.appfeatures > div {
+    display: none;
+    @media (width >= 768px) {
+        display: block;
+    }  
 }
 
 .featurewrapper {
@@ -809,13 +894,23 @@ li {
 
 
 .testaimonials {
-    display:block;
+    display:none;
     height: 100%;
     width: 100%;
     align-items: center;
     background-color: var(--hdiw-background);
     padding-top: 90px;
     padding-bottom: 90px;
+    @media (width >= 768px) {
+        display: block;
+    }  
+}
+
+.testaimonials > div {
+    display: none;
+    @media (width >= 768px) {
+        display: flex;
+    }  
 }
 
 .testaimonialwrapper {
@@ -952,18 +1047,36 @@ li {
     }
 }
 
+.faq-info-box {
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    @media (width >= 768px) {
+        display: block;
+    }
+}
+
 .faq-title {
+    margin: auto;
     font-weight: bolder;
     font-size: 32px;
     margin-bottom: 32px;
     font-family: var(--font-family-standard);
-    width: 60%;
+    width: 100%;
     color: var(--basic-text-color);
+    text-align: center;
+    @media (width >= 768px) {
+        text-align: start;
+        margin-left: 0px;
+        width: 60%;
+    }
 }
 
 .faq-text-box {
+    margin: auto;
    display: flex;
-   text-align: start;
+   text-align: center;
    margin-bottom: 40px;
    .faq-text {
     font-family: var(--font-family-standard);
@@ -971,6 +1084,11 @@ li {
     color: var(--smalltext-color);
     }
     width: 75%;
+
+    @media (width >= 768px) {
+        text-align: start;
+        margin-left: 0px;
+    }
 }
 
 .support-box-wrapper {
@@ -980,6 +1098,13 @@ li {
     @media (width >= 768px) {
        margin-bottom: 0px;
     }
+}
+
+.support-box-wrapper > div {
+    display: none;
+    @media (width >= 768px) {
+        display: block;
+    }  
 }
 
 .support-box {
@@ -1174,6 +1299,45 @@ li {
     display: none;
 }
 
+.contact-wrapper > div {
+    display: flex;
+    @media (width >= 768px) {
+        display: none;
+    }  
+}
+
+.contact-link > div {
+    display: flex;
+    @media (width >= 768px) {
+        display: none;
+    }  
+}
+
+.contact-link {
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    background-color: var(--purple-signin);
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    &:hover {
+        background-color: var(--smallergreytext);
+    }
+
+    .contact-text {
+        padding: 20px;
+        color: white;
+        font-family: var(--font-family-standard);
+    }
+}
+
 
 
 
@@ -1185,6 +1349,11 @@ li {
     align-items: center;
     max-width: auto;
     width:100%;
+    padding: 0px 10px;
+    @media (width >= 700px) {
+        padding: 0px;
+        
+    }
 }
 
 .subscribe-wrapper {
@@ -1273,6 +1442,7 @@ li {
     &:hover {
         box-shadow: none;
         border: 1px solid var(--logo-box);
+        background-color: var(--gray-button-color);
     }
 }
 

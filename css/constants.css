@@ -19,6 +19,7 @@
     --comment-box-color: white;
     --shadow-color: lightgray;
     --faq-tab: #ffffff;
+    --menu-tab-color: #474747;
 }
 
 [data-theme="dark"] {
@@ -38,4 +39,5 @@
     --comment-box-color: #1d1f29;
     --shadow-color: #0000005d;
     --Bar-border:#565973;
+    --menu-tab-color: #ffffff;
 }
