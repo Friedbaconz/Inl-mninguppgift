@@ -1621,6 +1621,7 @@ input[type=email] {
     align-items: center;
     justify-items: center;
     margin: auto;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
