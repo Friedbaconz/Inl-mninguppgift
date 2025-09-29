@@ -1,0 +1,108 @@
+
+@import url("./constants.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.features {
+    display:block;
+    max-width: auto;
+    height: auto;
+    width:100%;
+    background-color: var(--White-background-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.features-wrap {
+    display: flex;
+    max-width: 1296px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.featuretext {
+    display: flex;
+    margin: auto;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.appfeaturehead {
+    font-family: var(--font-family-standard);
+    margin: auto;
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    @media (width >= 1150px) {
+        margin-bottom: 100px;
+        text-align: start;
+        width: 100%;
+    }
+}
+
+.featuretitle {
+    margin: auto;
+    line-height: 130%;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.featuretitletext {
+    margin: auto;
+    color: var(--smallergreytext);
+    line-height: 160%;
+    font-size: 18px;
+}
+
+.featureboxgroup {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    flex-basis: 100%;
+    row-gap: 50px;
+    column-gap: 50px;
+
+    .featurebox {
+    display: flex;
+    font-family: var(--font-family-standard);
+    min-width: 345px;
+    }
+
+    .iconboxtext {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--smalltext-color);
+    }
+
+    @media (width >= 700px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.iconfill {
+    margin-left: 24px;
+
+    .iconboxtext {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--smalltext-color);
+    }
+}
+
+.featurephoneimg {
+    width: 348px;
+    height: 684px;
+    margin-top: 20px;
+    margin-right:202px;
+    display: none;
+    @media (width >= 1150px) {
+        display: flex;
+        
+    }
+}
