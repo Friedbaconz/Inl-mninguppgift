@@ -1,0 +1,109 @@
+
+@import url("./constants.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.hdiw {
+    display:block;
+    height: auto;
+    width:100%;
+    background-color: var(--hdiw-background);
+    padding-bottom: 50px;
+}
+
+.contenthdiw {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hdiw-text{
+    display: flex;
+    font-family: var(--font-family-standard);
+    font-weight: bold;
+    margin: auto;
+    margin-top: 80px;
+    color: var(--basic-text-color);
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.carousel {
+    display: block;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap:5vw;
+    @media (width >= 700px) {
+        width: 50vw;
+        gap:5vw;
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 1px;
+        align-items: center;
+        width: auto;
+        @media (width >= 1150px) {
+        width: 50vw;
+        gap: 3rem;
+        }
+    }
+}
+
+.iphoneshidden {
+    display: none;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    @media (width >= 700px) {
+        display: block;
+    }
+    @media (width >= 1150px) {
+        width: auto;
+    }
+}
+
+.iphonesshow {
+    display: block;
+    align-items: center;
+    margin: auto;
+    width:auto;
+    @media (width >= 700px) {
+        width:200px;
+    }
+    @media (width >= 1150px) {
+        width: auto;
+    }
+}
+
+.h2hdiw {
+    font-family: var(--font-family-standard);
+    font-weight: bold;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    color: var(--basic-text-color);
+}
+
+.phdiw {
+    font-family: var(--font-family-standard);
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 160%;
+    width: 100%;
+    color: var(--smalltext-color);
+    display: flex;
+    line-height: auto;
+    align-items: center;
+    margin: auto;
+    @media (width >= 1150px) {
+        width: 60%;
+    }
+}
