@@ -1,0 +1,27 @@
+
+@import url("./constants.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.footer {
+    display:flex;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    max-width: auto;
+    width:100%;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.rights {
+    font-family: var(--font-family-standard);
+    font-size: 14px;
+    color: var(--smallergreytext);
+}
