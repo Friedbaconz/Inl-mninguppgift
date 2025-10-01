@@ -36,7 +36,8 @@
     }
 
     @media (width >= 1150px) {
-        width: 69%;
+        width: 100%;
+        max-width: 1296px;
     }
 }
 

@@ -11,13 +11,10 @@
 }
 
 .title {
-    display: block;
-    max-width: auto;
-    height: 100%;
+    display: block;   
     width: 100%;
-    align-items: center;
+    height: 100%;
     justify-content: center;
-    position: relative;
     margin: auto;
     transition: ease 300ms;
     padding: 3px;
@@ -25,11 +22,15 @@
 
     @media (width >= 700px) {
        display: flex;
-       
+        padding: 0px;
+       padding-top: 300px;
+       padding-left: 10px;
+       padding-right: 10px;
     }
     @media (width >= 1150px) {
         display: flex;
         max-width: 1296px;
+        padding: 0px;
         padding-top:0px;
     }
 
@@ -40,24 +41,20 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    
-    bottom: 0px;
-    
+    width: auto;
     color: var(--basic-text-color);
     text-align: center;
     @media (width >= 700px) {
-       margin-left: 2%;
-       margin-top: 30%;
-       
     }
     @media (width >= 1150px) {
         position: relative;
-        bottom: 170px;
+        width: auto;
     }
 }
 
 .smalltext {
     display: block;
+    
 }
 
 .herobox {
@@ -70,26 +67,33 @@
 
 .herotext1 {
     position:unset;
-    display: flex;
+    display: block;
     margin: auto;
     font-size: 40px;
     font-family: var(--font-family-standard);
     font-weight: bold;
     line-height: 130%;
     text-align: center;
+    margin-bottom: 40px;
+    width: 80%;
+    transform:translateX(none);
     @media (width >= 700px) {
         position: absolute;
-        top: 20%;
-        width: 60%;
+        width: 63%;
+        top: 15%;
+        left:50%;
+        transform:translateX(-50%);
         text-align: center;
-        right: 20%;
         font-size: 50px;
+        margin-bottom: 0px;
     }
     @media (width >= 1150px) {
         text-align: start;
+        width: 100%;
         position: unset;
         font-size: 56px;
-        width: 100%;
+        margin-bottom: 20px;
+        transform:translateX(-0%);
     }
 }
 
@@ -100,10 +104,11 @@
     color: var(--smalltext-color);
     line-height: 160%;
     width: 100%;
-    margin-top: 30px;
+    padding: 0px 60px;
     @media (width >= 700px) {
-        width: 85%;
+        width: 80%;
         text-align: start;
+        padding: 0px 10px;
     }
 }
 
@@ -112,18 +117,19 @@
     display: block;
     margin-top: 40px;
     gap: 25px;
-    padding-bottom: 50px;
+    
     @media (width >= 700px) {
         margin-top: 60px;
         display: flex;
         padding: 0px;
         padding-bottom: 50px;
+        gap: 2%;
     }
 }
 
 .store {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto;
     grid-template-areas:    "icon text"
                             "icon store";
 
@@ -136,30 +142,35 @@
     transition: ease 300ms;
     color: black;
     margin-bottom: 20px;
-    margin-left: 0px;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    column-gap: 1rem;
+    
     
     @media (width >=700px) {
         height: 65px;
+        gap:0px;
+        width: auto;
         column-gap: 1rem;
-        width: 100%;
+        grid-template-columns: auto 1fr;
+        margin-bottom: 0px;
     }
     @media (width >= 1150px) {
+        gap:0px;
         column-gap: 1rem;
         width: 100%;
+        margin-bottom: 0px;
     }
     
     .downloadstore {
-        position: relative;
         grid-area: text;
-        font-size: 0.7em;
+        font-size: 0.6em;
         font-weight: 600;
-        margin-left: 5px;
+        margin: auto;
         text-align: center;
         position: relative;
         top: 3px;
-        width: auto;
-        
         @media (width >= 700px) {
             text-align: start;
             margin-left: 0px;
@@ -170,9 +181,7 @@
         margin: auto;
         grid-area: icon;
         height: auto;
-        position: relative;
-        left: 300%;
-        
+        width: auto;
         @media (width >= 700px) {
             margin-left: 0px;
             left: 0px;
@@ -184,8 +193,9 @@
         grid-area: store;
         font-size: 1.2em;
         font-weight: 600;
-        margin-left: auto;
-        
+        font-display: hidden;
+        line-height: 1em;
+        max-height: 2em;
         @media (width >= 700px) {
             text-align: start;
             margin-left: 0px;
@@ -209,7 +219,8 @@
     display: none;
     justify-content: baseline;
     align-items: baseline;
-    margin-top: 200px;
+    margin: auto;
+    
     @media (width >= 700px) {
         display: flex;
     }
@@ -218,12 +229,15 @@
 .phone {
     display: none;
     margin: auto;
-    width: 150%;
     flex-wrap: wrap;
+    margin-top: auto;
+    
     @media (width >= 700px) {
         display: flex;
+        width: 100%;
     }
     @media (width >= 1150px) {
+        margin-top: 200px;
         width: auto;
     }
 }
